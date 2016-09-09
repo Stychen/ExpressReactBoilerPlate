@@ -1,0 +1,5 @@
+{
+  "appName": "Card Land",
+  "port": 3000,
+  "webpackDevServerPort": 8080
+}

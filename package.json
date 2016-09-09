@@ -1,0 +1,53 @@
+{
+  "name": "card-land-express",
+  "version": "1.0.0",
+  "description": "Starter",
+  "scripts": {
+    "//": "DEV COMMANDS",
+    "start": "npm run build:html && npm run start:dev",
+    "build:html": "NODE_ENV=development webpack --config webpack.config.devHTML.js",
+    "start:dev": "NODE_ENV=development nodemon index.js",
+
+    "//": "PROD COMMANDS",
+    "stats": "webpack --profile --json > stats.json",
+    "build": "webpack",
+    "start:prod": "NODE_ENV=production node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "array.prototype.findindex": "^2.0.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-class-properties": "^6.11.5",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.14.0",
+    "clean-webpack-plugin": "^0.1.10",
+    "css-loader": "^0.24.0",
+    "ejs": "^2.5.1",
+    "ejs-loader": "^0.3.0",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "html-webpack-template": "^5.1.1",
+    "json-loader": "^0.5.4",
+    "nodemon": "^1.10.2",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.15.0",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-merge": "^0.14.1"
+  }
+}
